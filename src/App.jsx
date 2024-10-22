@@ -2,6 +2,8 @@ import './App.css'
 import Banner from './components/Banner/Banner'
 import Header from './components/Header/Header'
 import OurRecipes from './components/OurRecipes/OurRecipes'
+import Recipes from './components/Recipes/Recipes'
+import Sidebar from './components/Sidebar/Sidebar'
 
 function App() {
 
@@ -11,6 +13,13 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <OurRecipes></OurRecipes>
+
+      <section className='flex flex-col md:flex-row justify-between'>
+        {/* Cards section */}
+        <Recipes></Recipes>
+        {/* Sidebar */}
+        <Sidebar></Sidebar>
+      </section>
     </div>
   )
 }
