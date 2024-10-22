@@ -12,10 +12,13 @@ const Header = () => {
             {/* menu section */}
             <div className="flex flex-row justify-between items-center gap-4">
                 <div className="flex justify-between items-center relative">
-                    <input className="py-4 px-10 bg-gray-100 rounded-full placeholder-gray-800 outline-none" type="text" name="" id="" placeholder="Search" />
+                    <input className="py-4 px-14 bg-gray-100 rounded-full placeholder-gray-800 outline-none" type="text" name="" id="" placeholder="Search" />
+                    <div className="absolute inset-y-0 pl-4 flex justify-center top-4 text-2xl">
+                        <i className="fa solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
                 <div className="bg-green-400 flex items-center justify-center rounded-full w-12 h-12">
-                    
+                    <i className='fa-regular fa-user-circle text-3xl'></i>
                 </div>
             </div>
         </div>
