@@ -50,7 +50,7 @@ const Recipes = ({addRecipeToQueue}) => {
               </div>
 
               <div className="card-actions mt-6">
-                <button onClick={()=>addRecipeToQueue(recipe)} className="btn bg-green-400 rounded-full px-8">Want to Cook</button>
+                <button onClick={()=>addRecipeToQueue(recipe)} className="btn bg-green-400 rounded-full px-8 hover:bg-green-500">Want to Cook</button>
               </div>
             </div>
           </div>
