@@ -1,9 +1,8 @@
-import React from 'react';
 
-const Sidebar = () => {
+const Sidebar = ({recipeQueue}) => {
     return (
         <div className='md:w-1/3'>
-            Sidebar
+           want to cook {recipeQueue.length}
         </div>
     );
 };

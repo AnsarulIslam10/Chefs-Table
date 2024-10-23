@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Recipes = () => {
+const Recipes = ({addRecipeToQueue}) => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
@@ -9,7 +9,6 @@ const Recipes = () => {
       .then((data) => setRecipes(data));
   }, []);
 
-  console.log(recipes);
   return (
     <div className="md:w-2/3">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -49,8 +48,9 @@ const Recipes = () => {
                   <p>{recipe.calories} calories</p>
                 </div>
               </div>
+
               <div className="card-actions mt-6">
-                <button className="btn bg-green-400 rounded-full px-8">Want to Cook</button>
+                <button onClick={()=>addRecipeToQueue(recipe)} className="btn bg-green-400 rounded-full px-8">Want to Cook</button>
               </div>
             </div>
           </div>
